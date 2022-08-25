@@ -12,7 +12,13 @@ filetype off
 call plug#begin('~/.config/nvim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
+Plug 'preservim/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim' "short cut is <C-p>
+Plug 'neoclide/coc.nvim', {'branch' : 'release'}
 call plug#end()
 
 " Set Theme
 colorscheme gruvbox
+
+" Nerd Tree ShortCut
+map <silent> <C-n> :NERDTreeFocus<CR>
